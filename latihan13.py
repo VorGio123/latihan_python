@@ -53,3 +53,6 @@ print(hasil)
 #sort_values
 print("\n===== Urut Nilai (Kecil → Besar) =====")
 print(df.sort_values("Nilai"))
+#kebalikannya
+print("\n===== Urut Nilai (Besar → Kecil) =====")
+print(df.sort_values("Nilai", ascending=False))
