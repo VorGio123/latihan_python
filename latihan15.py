@@ -62,7 +62,7 @@ df.rename(
 
 print(df)
 
-#menggabungkan dataframe
+#menggabungkan dataframe (concat)
 print("\n===== Menggabungkan DataFrame dengan concat() =====")
 
 df1 = pd.DataFrame({
@@ -85,5 +85,55 @@ print(df2)
 print("\n===== Hasil concat() =====")
 
 hasil = pd.concat([df1, df2], axis=0)
+
+print(hasil)
+
+#menggabungkan dataframe (merge)
+print("\n===== Menggabungkan DataFrame dengan merge() =====")
+
+df1 = pd.DataFrame({
+    "Kunci": ["K1", "K2"],
+    "A": [1, 2]
+})
+
+df2 = pd.DataFrame({
+    "Kunci": ["K1", "K2"],
+    "B": [3, 4]
+})
+
+print("DataFrame 1")
+print(df1)
+
+print("\nDataFrame 2")
+print(df2)
+
+#hasil merge
+print("\n===== Hasil merge() =====")
+
+hasil = pd.merge(df1, df2, on="Kunci", how="inner")
+
+print(hasil)
+
+#menggabungkan dataframe (join)
+print("\n===== Menggabungkan DataFrame dengan join() =====")
+
+df1 = pd.DataFrame({
+    "Nama": ["Andi", "Budi", "Citra"]
+})
+
+df2 = pd.DataFrame({
+    "Nilai": [90, 85, 95]
+})
+
+print("DataFrame 1")
+print(df1)
+
+print("\nDataFrame 2")
+print(df2)
+
+#hasil join
+print("\n===== Hasil join() =====")
+
+hasil = df1.join(df2)
 
 print(hasil)
