@@ -61,3 +61,4 @@ if selisih_mse < 0.01:
 else:
     print("Ada selisih MSE yang lumayan, artinya regularisasi (Ridge) ngasih")
     print("perbaikan performa dibanding Linear Regression biasa.")
+    
