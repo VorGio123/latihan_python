@@ -64,3 +64,4 @@ if selisih_akhir < 0.05:
 else:
     print("Masih ada jarak lumayan jauh antara training sama validation error.")
     print("Jadi kalau datanya ditambah lagi, kemungkinan errornya masih bisa turun.")
+    ##

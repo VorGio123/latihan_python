@@ -79,3 +79,4 @@ if selisih_akhir > 0.1:
     print(f"Makanya depth yang lebih cocok dipake itu depth {best_depth}, soalnya di situ testing score-nya paling gede.")
 else:
     print("Selisih training sama testing score gak terlalu jauh, jadi modelnya masih aman, gak overfitting parah.")
+    ##
